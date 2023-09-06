@@ -5,14 +5,9 @@
     <classes>
       <class name="test.RunTest">
         <methods>
-          <include name="LogoutApplication"/>
           <include name="SetupNewTest"/>
-          <include name="OpenloginPage"/>
-          <include name="ClickonAPIMonitoring"/>
-          <include name="LoginApplication"/>
           <include name="invokeBrowser"/>
           <include name="CloseBrowser"/>
-          <include name="RunNewTest"/>
         </methods>
       </class> <!-- test.RunTest -->
     </classes>

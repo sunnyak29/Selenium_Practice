@@ -10,27 +10,25 @@ public class LogInPage {
 
 	public LogInPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
-		this.driver=driver;
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	//PageFactory
-		@FindBy (id="username")
-		WebElement userid;
-		
-		@FindBy (id="password")
-		WebElement passwordele;
-		
-		@FindBy (id="kc-login")
-		WebElement login_btn;
-		public void LogInApplication(String email,String password) {
-			userid.sendKeys(email);
-			passwordele.sendKeys(password);
-			login_btn.click();
-			
-		}
-		
-		
 
+	// PageFactory
+	@FindBy(id = "username")
+	WebElement userid;
 
+	@FindBy(id = "password")
+	WebElement passwordele;
+
+	@FindBy(id = "kc-login")
+	WebElement login_btn;
+
+	public void LogInApplication(String email, String password) {
+		userid.sendKeys(email);
+		passwordele.sendKeys(password);
+		login_btn.click();
+
+	}
 
 }
